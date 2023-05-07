@@ -9,21 +9,21 @@ function calculateBMI() {
   bmiRange = bmiRange.toFixed(2)
 
   if (bmiRange < 16) {
-    classification = 'Severe Thinness'
+    classification = 'Magreza Severa'
   } else if (bmiRange > 16 && bmiRange < 17) {
-    classification = 'Moderate Thinness'
+    classification = 'Magreza Moderada'
   } else if (bmiRange > 17 && bmiRange < 18.5) {
-    classification = 'Mild Thinness'
+    classification = 'Magreza Leve'
   } else if (bmiRange > 18.5 && bmiRange < 25) {
     classification = 'Normal'
   } else if (bmiRange > 25 && bmiRange < 30) {
-    classification = 'Overweight'
+    classification = 'Sobrepeso'
   } else if (bmiRange > 30 && bmiRange < 34) {
-    classification = 'Obese Class I'
+    classification = 'Obesidade I'
   } else if (bmiRange > 35 && bmiRange < 40) {
-    classification = 'Obese Class II'
+    classification = 'Obesidade II'
   } else if (bmiRange > 40) {
-    classification = 'Obese Class III'
+    classification = 'Obesidade III'
   }
-  showOutput.innerHTML = `IMG Resultado: ${bmiRange}' | ${classification} `
+  showOutput.innerHTML = `IMC Resultado: ${bmiRange}' | ${classification} `
 }
